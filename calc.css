@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(68, 68, 68);
+}
+
+.calculos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.campoCalc {
+    width: 100vw;
+    height: 150px;
+    background: rgb(175, 175, 175);
+    text-align: center;
+    font-size: 60px;
+}
+
+input {
+    width: calc(100vw - 100px);
+    height: 150px;
+    background: rgb(175, 175, 175);
+    text-align: center;
+    font-size: 60px;
+    border: none;
+}
+
+input:focus {
+    outline: 0;
+}
+
+svg {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.buttons-history {
+    display: flex;
+    margin-left: 10vw;
+}
+
+button {
+    width: 150px;
+    height: 18vh;
+    font-size: 40px;
+    background-color: rgb(88, 88, 88);
+    color: rgb(199, 241, 252);
+    cursor: pointer;
+    border: none;
+    transition: .2s;
+}
+
+button:hover {
+    background-color: rgb(77, 77, 77);
+}
+
+.history {
+    width: 20vw;
+    height: 73vh;
+    text-align: center;
+    font-size: 20px;
+    color: rgb(145, 212, 243);
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.history span {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    
+}
+
+
+
+#results-history {
+    overflow-y: scroll;
+}
+
+#results-history::-webkit-scrollbar {
+    display: none;
+}
